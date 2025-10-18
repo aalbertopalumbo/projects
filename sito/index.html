@@ -18,37 +18,51 @@
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
-        background-color: rgb(240, 255, 240);
+        background-color: rgb(250, 255, 207);
         overflow: auto;
         transition: all 0.3s ease;
+        font-size: 20px;
+    }
+
+    h1 {
+        margin-left: 20px;
+        font-size: 40px;
+        margin-top: 40px;
     }
 
 
     .container {
         display: grid;
-        gap: 10px;
         /* height: 100vh; */
         grid-row: auto;
         /* grid-template-areas:
             "nav nav nav"
             "main main side"
             "footer footer footer";  */
+         overflow: visible;
+        
     }
 
     .nav {
-        display: inline-block;
+        display: block;
         top: 0;
-        background-color: rgb(96, 220, 24);
+        overflow: visible;
+        background-color: rgb(93, 186, 39);
         gap: 0px;
         grid-column: 1/4;
 
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
     }
 
     .menu {
-
         display: flex;
         position: sticky;
         top: 0;
+        left: 0;
+        right: 0;
         list-style: none;
         justify-content: space-around;
         margin: 0px;
@@ -70,9 +84,11 @@
     }
 
     .listamenu:hover {
-        background-color: rgb(105, 64, 10);
-        color: white;
+        background-color: rgb(9, 64, 7);
+        color: rgb(228, 237, 190);
         cursor: pointer;
+        /*voglio che sottolinei*/
+
         transform: scale(1.15);
         /* transition: all 0.3s ease; */
     }
@@ -81,6 +97,13 @@
         font-weight: 700;
         text-decoration: none;
         color: black;
+    }
+
+    .listamenu a:hover {
+        color: white;
+        text-decoration: underline;
+        text-shadow: none;
+        transition: all 0.3s ease;
     }
 
     .menu:hover {
@@ -102,6 +125,7 @@
         background-image: url("images/logo.jpg");
         height: 950px;
         font-weight: 900;
+        grid-column: 1/4;
     }
 
     .title {
@@ -112,208 +136,64 @@
 
     .title:hover {
         transform: scale(1.10);
-        }
+    }
 
+    .main {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .side {
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(200, 255, 178);
+        border-radius: 10px;
+        border: solid 2px rgb(16, 39, 3);
+    }
 
 </style>
 
 <body>
 
     <div class="container">
-        <div class="box nav">
-            <div class="logo">
+        <div class="logo">
                 <span class="title">Plant World</span>
             </div>
+        <div class="box nav">
+            
             <ul class="menu">
                 <li class="listamenu"> <a href="index.html">Home</a></li>
-                <li class="listamenu"> <a href="Negozio">Negozio</a></li>
+                <li class="listamenu"> <a href="Catalogo">Catalogo</a></li>
                 <li class="listamenu"> <a href="Contatti">Contatti</a></li>
                 <li class="listamenu"> <a href="Aiuto">Aiuto</a></li>
             </ul>
         </div>
         <div class="box main">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet dolorum soluta unde aliquam placeat
-            maiores impedit mollitia rem quisquam ea accusamus laboriosam tempore incidunt, suscipit et repellendus
-            nostrum officiis non.
+            <h1>Benvenuti su Plant World!</h1>
+            <p>Scopri la nostra vasta selezione di piante per ogni ambiente e stile di vita. Che tu sia un appassionato
+                giardiniere o un principiante, abbiamo la pianta perfetta per te. Esplora il nostro negozio online e
+                trova ispirazione per trasformare i tuoi spazi verdi. 
+                <br>
+                <br>
+                Accedi al nostro catalogo per scoprire tutte le piante che possediamo e quelle che andremo a inserire
+                prossimamente.
+                <br>
+                <br>                
+                Aiutaci a crescere, a imparare e migliorare la nostra conoscenza sulle piante insieme a te! 
+                <br>
+                <br>
+                Ci troviamo a Milano, in un appartamento che ha bisogno di essere riempito di nuove piante!
+
+            </p>
+
+            
         </div>
-        <div class="box side"></div>
+        <div class="box side">
+            <h2>Offerta Speciale!</h2>
+            <p>Acquista ora e ricevi uno sconto del 20% sul tuo primo ordine con il codice WELCOME20.</p>
+            <p>Non perdere l'occasione di arricchire la tua casa con le nostre piante esclusive!</p>
+        </div>
+
         <div class="box footer"></div>
     </div>
 
