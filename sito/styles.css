@@ -1,0 +1,151 @@
+body {
+        font-family: 'DM Sans', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        background-color: rgb(234, 244, 219);
+        overflow: auto;
+        transition: all 0.3s ease;
+        font-size: 20px;
+    }
+
+    h1 {
+        margin-left: 20px;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+
+    .container {
+        display: grid;
+        /* height: 100vh; */
+        grid-row: auto;
+        /* grid-template-areas:
+            "nav nav nav"
+            "main main side"
+            "footer footer footer";  */
+         overflow: visible;
+        grid-template-columns: 3fr 2fr;
+        
+    }
+
+    .nav {
+        display: block;
+        top: 0;
+        overflow: visible;
+        background-color: rgb(93, 186, 39);
+        gap: 0px;
+        grid-column: 1/-1;
+
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        list-style: none;
+        justify-content: space-around;
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .listamenu {
+        text-shadow: white 0px 0px 2px;
+        padding: 10px;
+        font-size: 24px;
+        margin: 0px;
+        /* border: solid 1px rgb(105, 64, 10); */
+        border-radius: 10px;
+        width: 25%;
+        text-align: center;
+        transition: all 0.3s ease;
+
+    }
+
+    .listamenu:hover {
+        background-color: rgb(9, 64, 7);
+        color: rgb(228, 237, 190);
+        cursor: pointer;
+        /*voglio che sottolinei*/
+
+        transform: scale(1.15);
+        /* transition: all 0.3s ease; */
+    }
+
+    .listamenu a {
+        font-weight: 700;
+        text-decoration: none;
+        color: black;
+    }
+
+    .listamenu a:hover {
+        color: white;
+        text-decoration: underline;
+        text-shadow: none;
+        transition: all 0.3s ease;
+    }
+
+    .menu:hover {
+        transition: all 0.3s ease;
+        color: white;
+        cursor: pointer;
+    }
+
+    .logo {
+        display: flex;
+        text-shadow: white 0px 0px 10px;
+        align-items: center;
+        justify-content: center;
+        font-size: 90px;
+        margin: 0px;
+        font-weight: bold;
+        text-align: center;
+        background-size: cover;
+        
+        height: 950px;
+        font-weight: 900;
+        grid-column: 1/-1;
+    }
+
+    .logo.home {
+        background-image: url("images/logo-home.jpg");
+    }
+
+    .logo.catalogo {
+        background-image: url("images/logo-catalogo.jpg");
+        min-height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title {
+        /* padding-left: 60px; */
+        min-height: 50px;
+        transition: all 0.3s ease;
+    }
+
+    .title:hover {
+        transform: scale(1.10);
+    }
+
+    .main {
+        padding: 20px;
+        margin: 20px;
+        grid-column: 1/2;
+    }
+
+    .side {
+        grid-column: 2/3;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgb(200, 255, 178);
+        border-radius: 10px;
+        border: solid 2px rgb(16, 39, 3);
+    }
